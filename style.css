@@ -1,0 +1,241 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    list-style:none;
+}
+button{
+    margin: 50px;
+}
+#first {
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+#first::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: blue;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover#first::after {
+    left: 0;
+}
+#second {
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+#second::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    background-color: blue;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover#second::after{
+    right: 0;
+}
+#third{
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+#third::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    background-color: blue;
+    z-index: -1;
+    transition: 0.5s;
+    left: 0;
+}
+#third:hover::after{
+    top: 0;
+}
+#forth{
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+#forth::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    background-color: blue;
+    z-index: -1;
+    transition: 0.5s;
+    left: 0;
+}
+#forth:hover::after{
+    bottom: 0;
+}
+
+#sixth{
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+#sixth::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: blue;
+    z-index: -1;
+    transition: 1s cubic-bezier(.07,1.68,.97,.64);
+}
+#sixth:hover::after{
+    left: 0;
+}
+#seventh{
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+#seventh::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    background-color: blue;
+    z-index: -1;
+    transition: 1s cubic-bezier(.07,1.68,.97,.64);
+}
+#seventh:hover::after{
+    right: 0;
+}
+#eighth{
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+#eighth::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    background-color: blue;
+    z-index: -1;
+    left: 0;
+    transition: 1s cubic-bezier(.07,1.68,.97,.64);
+}
+#eighth:hover::after{
+    top: 0;
+}
+#ninth{
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+#ninth::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    background-color: blue;
+    z-index: -1;
+    left: 0;
+    transition: 1s cubic-bezier(.07,1.68,.97,.64);
+}
+#ninth:hover::after{
+    bottom: 0;
+}
+#ten{
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    background-color: red;
+    width: 100px;
+    height: 40px;
+}
+#ten::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+    z-index: -1;
+    transition: 0.5s;
+}
+#ten:hover::after{
+    width: 0%;
+    height: 0%;
+}
+#ten:hover{
+    background-color: blue;
+}
+#eleven{
+    width: 150px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+#eleven::after{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0px;
+    height: 100%;
+    background-color: blue;
+    transform: translate(-50%);
+    transition:0.5s;
+    z-index: -1;
+
+}
+#eleven:after{
+    width: 100% ;
+}    
